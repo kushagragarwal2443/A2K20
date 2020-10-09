@@ -1,0 +1,49 @@
+
+Consensus tree program, version 3.697
+
+Species in order: 
+
+  1. ATO98118.1
+  2. ARI44803.1
+  3. QIG55944.1
+  4. QNE12858.1
+  5. QHR63299.1
+  6. AIA62329.1
+
+
+Sets included in the consensus tree
+
+Set (species in order)     How many times out of    1.00
+
+..****                      1.00
+..***.                      1.00
+...**.                      1.00
+
+
+Sets NOT included in consensus tree: NONE
+
+
+Extended majority rule consensus tree
+
+CONSENSUS TREE:
+the numbers on the branches indicate the number
+of times the partition of the species into the two sets
+which are separated by that branch occurred
+among the trees, out of   1.00 trees
+(trees had fractional weights)
+
+                          +---------------QIG55944.1
+                  +--1.00-|
+                  |       |       +-------QHR63299.1
+          +--1.00-|       +--1.00-|
+          |       |               +-------QNE12858.1
+  +-------|       |
+  |       |       +-----------------------AIA62329.1
+  |       |
+  |       +-------------------------------ARI44803.1
+  |
+  +---------------------------------------ATO98118.1
+
+
+  remember: this is an unrooted tree!
+

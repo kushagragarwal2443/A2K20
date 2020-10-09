@@ -1,0 +1,203 @@
+************************  GLOBAL ALIGNMENT   ***************************
+
+Input Sequences:
+
+Sequence1: MSSSSWLLLSLVAVTAAQSTIEEQAKTFLDKFNHEAEDLFYQSSLASWNYNTNITEENVQNMNNAGDKWSAFLKEQSTLAQMYPLQEIQNLTVKLQLQALQQNGSSVLSEDKSKRLNTILNTMSTIYSTGKVCNPDNPQECLLLEPGLNEIMANSLDYNERLWAWESWRSEVGKQLRPLYEEYVVLKNEMARANHYEDYGDYWRGDYEVNGVDGYDYSRGQLIEDVEHTFEEIKPLYEHLHAYVRAKLMNAYPSYISPIGCLPAHLLGDMWGRFWTNLYSLTVPFGQKPNIDVTDAMVDQAWDAQRIFKEAEKFFVSVGLPNMTQGFWENSMLTDPGNVQKAVCHPTAWDLGKGDFRILMCTKVTMDDFLTAHHEMGHIQYDMAYAAQPFLLRNGANEGFHEAVGEIMSLSAATPKHLKSIGLLSPDFQEDNETEINFLLKQALTIVGTLPFTYMLEKWRWMVFKGEIPKDQWMKKWWEMKREIVGVVEPVPHDETYCDPASLFHVSNDYSFIRYYTRTLYQFQFQEALCQAAKHEGPLHKCDISNSTEAGQKLFNMLRLGKSEPWTLALENVVGAKNMNVRPLLNYFEPLFTWLKDQNKNSFVGWSTDWSPYADQSIKVRISLKSALGDKAYEWNDNEMYLFRSSVAYAMRQYFLKVKNQMILFGEEDVRVANLKPRISFNFFVTAPKNVSDIIPRTEVEKAIRMSRSRINDAFRLNDNSLEFLGIQPTLGPPNQPPVSIWLIVFGVVMGVIVVGIVILIFTGIRDRKKKNKARSGENPYASIDISKGENNPGFQNTDDVQTSF
+Sequence2: MSSSCWLLLSLVAVATAQSLIEEKAESFLNKFNQEAEDLSYQSSLASWNYNTNITEENAQKMNEAAAKWSAFYEEQSKIAQNFSLQEIQNATIKRQLKALQQSGSSALSPDKNKQLNTILNTMSTIYSTGKVCNSMNPQECFLLEPGLDEIMATSTDYNRRLWAWEGWRAEVGKQLRPLYEEYVVLKNEMARANNYEDYGDYWRGDYEAEGVEGYNYNRNQLIEDVENTFKEIKPLYEQLHAYVRTKLMEVYPSYISPTGCLPAHLLGDMWGRFWTNLYPLTTPFLQKPNIDVTDAMVNQSWDAERIFKEAEKFFVSVGLPQMTPGFWTNSMLTEPGDDRKVVCHPTAWDLGHGDFRIKMCTKVTMDNFLTAHHEMGHIQYDMAYAKQPFLLRNGANEGFHEAVGEIMSLSAATPKHLKSIGLLPSNFQEDNETEINFLLKQALTIVGTLPFTYMLEKWRWMVFQDKIPREQWTKKWWEMKREIVGVVEPLPHDETYCDPASLFHVSNDYSFIRYYTRTIYQFQFQEALCQAAKHDGPLHKCDISNSTEAGQKLLNMLSLGNSGPWTLALENVVGSRNMDVKPLLNYFQPLFVWLKEQNRNSTVGWSTDWSPYADQSIKVRISLKSALGKNAYEWTDNEMYLFRSSVAYAMREYFSREKNQTVPFGEADVWVSDLKPRVSFNFFVTSPKNVSDIIPRSEVEEAIRMSRGRINDIFGLNDNSLEFLGIYPTLKPPYEPPVTIWLIIFGVVMGTVVVGIVILIVTGIKGRKKKNETKREENPYDSMDIGKGESNAGFQNSDDAQTSF
+
+Scoring strategy:
+
+{'A': {'A': 4, 'C': 0, 'B': -2, 'E': -1, 'D': -2, 'G': 0, 'F': -2, 'I': -1, 'H': -2, 'K': -1, 'M': -1, 'L': -1, 'N': -2, 'Q': -1, 'P': -1, 'S': 1, 'R': -1, 'T': 0, 'W': -3, 'V': 0, 'Y': -2, 'X': 0, 'Z': -1}, 'C': {'A': 0, 'C': 9, 'B': -3, 'E': -4, 'D': -3, 'G': -3, 'F': -2, 'I': -1, 'H': -3, 'K': -3, 'M': -1, 'L': -1, 'N': -3, 'Q': -3, 'P': -3, 'S': -1, 'R': -3, 'T': -1, 'W': -2, 'V': -1, 'Y': -2, 'X': -2, 'Z': -3}, 'B': {'A': -2, 'C': -3, 'B': 4, 'E': 1, 'D': 4, 'G': -1, 'F': -3, 'I': -3, 'H': 0, 'K': 0, 'M': -3, 'L': -4, 'N': 3, 'Q': 0, 'P': -2, 'S': 0, 'R': -1, 'T': -1, 'W': -4, 'V': -3, 'Y': -3, 'X': -1, 'Z': 1}, 'E': {'A': -1, 'C': -4, 'B': 1, 'E': 5, 'D': 2, 'G': -2, 'F': -3, 'I': -3, 'H': 0, 'K': 1, 'M': -2, 'L': -3, 'N': 0, 'Q': 2, 'P': -1, 'S': 0, 'R': 0, 'T': -1, 'W': -3, 'V': -2, 'Y': -2, 'X': -1, 'Z': 4}, 'D': {'A': -2, 'C': -3, 'B': 4, 'E': 2, 'D': 6, 'G': -1, 'F': -3, 'I': -3, 'H': -1, 'K': -1, 'M': -3, 'L': -4, 'N': 1, 'Q': 0, 'P': -1, 'S': 0, 'R': -2, 'T': -1, 'W': -4, 'V': -3, 'Y': -3, 'X': -1, 'Z': 1}, 'G': {'A': 0, 'C': -3, 'B': -1, 'E': -2, 'D': -1, 'G': 6, 'F': -3, 'I': -4, 'H': -2, 'K': -2, 'M': -3, 'L': -4, 'N': 0, 'Q': -2, 'P': -2, 'S': 0, 'R': -2, 'T': -2, 'W': -2, 'V': -3, 'Y': -3, 'X': -1, 'Z': -2}, 'F': {'A': -2, 'C': -2, 'B': -3, 'E': -3, 'D': -3, 'G': -3, 'F': 6, 'I': 0, 'H': -1, 'K': -3, 'M': 0, 'L': 0, 'N': -3, 'Q': -3, 'P': -4, 'S': -2, 'R': -3, 'T': -2, 'W': 1, 'V': -1, 'Y': 3, 'X': -1, 'Z': -3}, 'I': {'A': -1, 'C': -1, 'B': -3, 'E': -3, 'D': -3, 'G': -4, 'F': 0, 'I': 4, 'H': -3, 'K': -3, 'M': 1, 'L': 2, 'N': -3, 'Q': -3, 'P': -3, 'S': -2, 'R': -3, 'T': -1, 'W': -3, 'V': 3, 'Y': -1, 'X': -1, 'Z': -3}, 'H': {'A': -2, 'C': -3, 'B': 0, 'E': 0, 'D': -1, 'G': -2, 'F': -1, 'I': -3, 'H': 8, 'K': -1, 'M': -2, 'L': -3, 'N': 1, 'Q': 0, 'P': -2, 'S': -1, 'R': 0, 'T': -2, 'W': -2, 'V': -3, 'Y': 2, 'X': -1, 'Z': 0}, 'K': {'A': -1, 'C': -3, 'B': 0, 'E': 1, 'D': -1, 'G': -2, 'F': -3, 'I': -3, 'H': -1, 'K': 5, 'M': -1, 'L': -2, 'N': 0, 'Q': 1, 'P': -1, 'S': 0, 'R': 2, 'T': -1, 'W': -3, 'V': -2, 'Y': -2, 'X': -1, 'Z': 1}, 'M': {'A': -1, 'C': -1, 'B': -3, 'E': -2, 'D': -3, 'G': -3, 'F': 0, 'I': 1, 'H': -2, 'K': -1, 'M': 5, 'L': 2, 'N': -2, 'Q': 0, 'P': -2, 'S': -1, 'R': -1, 'T': -1, 'W': -1, 'V': 1, 'Y': -1, 'X': -1, 'Z': -1}, 'L': {'A': -1, 'C': -1, 'B': -4, 'E': -3, 'D': -4, 'G': -4, 'F': 0, 'I': 2, 'H': -3, 'K': -2, 'M': 2, 'L': 4, 'N': -3, 'Q': -2, 'P': -3, 'S': -2, 'R': -2, 'T': -1, 'W': -2, 'V': 1, 'Y': -1, 'X': -1, 'Z': -3}, 'N': {'A': -2, 'C': -3, 'B': 3, 'E': 0, 'D': 1, 'G': 0, 'F': -3, 'I': -3, 'H': 1, 'K': 0, 'M': -2, 'L': -3, 'N': 6, 'Q': 0, 'P': -2, 'S': 1, 'R': 0, 'T': 0, 'W': -4, 'V': -3, 'Y': -2, 'X': -1, 'Z': 0}, 'Q': {'A': -1, 'C': -3, 'B': 0, 'E': 2, 'D': 0, 'G': -2, 'F': -3, 'I': -3, 'H': 0, 'K': 1, 'M': 0, 'L': -2, 'N': 0, 'Q': 5, 'P': -1, 'S': 0, 'R': 1, 'T': -1, 'W': -2, 'V': -2, 'Y': -1, 'X': -1, 'Z': 3}, 'P': {'A': -1, 'C': -3, 'B': -2, 'E': -1, 'D': -1, 'G': -2, 'F': -4, 'I': -3, 'H': -2, 'K': -1, 'M': -2, 'L': -3, 'N': -2, 'Q': -1, 'P': 7, 'S': -1, 'R': -2, 'T': -1, 'W': -4, 'V': -2, 'Y': -3, 'X': -2, 'Z': -1}, 'S': {'A': 1, 'C': -1, 'B': 0, 'E': 0, 'D': 0, 'G': 0, 'F': -2, 'I': -2, 'H': -1, 'K': 0, 'M': -1, 'L': -2, 'N': 1, 'Q': 0, 'P': -1, 'S': 4, 'R': -1, 'T': 1, 'W': -3, 'V': -2, 'Y': -2, 'X': 0, 'Z': 0}, 'R': {'A': -1, 'C': -3, 'B': -1, 'E': 0, 'D': -2, 'G': -2, 'F': -3, 'I': -3, 'H': 0, 'K': 2, 'M': -1, 'L': -2, 'N': 0, 'Q': 1, 'P': -2, 'S': -1, 'R': 5, 'T': -1, 'W': -3, 'V': -3, 'Y': -2, 'X': -1, 'Z': 0}, 'T': {'A': 0, 'C': -1, 'B': -1, 'E': -1, 'D': -1, 'G': -2, 'F': -2, 'I': -1, 'H': -2, 'K': -1, 'M': -1, 'L': -1, 'N': 0, 'Q': -1, 'P': -1, 'S': 1, 'R': -1, 'T': 5, 'W': -2, 'V': 0, 'Y': -2, 'X': 0, 'Z': -1}, 'W': {'A': -3, 'C': -2, 'B': -4, 'E': -3, 'D': -4, 'G': -2, 'F': 1, 'I': -3, 'H': -2, 'K': -3, 'M': -1, 'L': -2, 'N': -4, 'Q': -2, 'P': -4, 'S': -3, 'R': -3, 'T': -2, 'W': 11, 'V': -3, 'Y': 2, 'X': -2, 'Z': -3}, 'V': {'A': 0, 'C': -1, 'B': -3, 'E': -2, 'D': -3, 'G': -3, 'F': -1, 'I': 3, 'H': -3, 'K': -2, 'M': 1, 'L': 1, 'N': -3, 'Q': -2, 'P': -2, 'S': -2, 'R': -3, 'T': 0, 'W': -3, 'V': 4, 'Y': -1, 'X': -1, 'Z': -2}, 'Y': {'A': -2, 'C': -2, 'B': -3, 'E': -2, 'D': -3, 'G': -3, 'F': 3, 'I': -1, 'H': 2, 'K': -2, 'M': -1, 'L': -1, 'N': -2, 'Q': -1, 'P': -3, 'S': -2, 'R': -2, 'T': -2, 'W': 2, 'V': -1, 'Y': 7, 'X': -1, 'Z': -2}, 'X': {'A': 0, 'C': -2, 'B': -1, 'E': -1, 'D': -1, 'G': -1, 'F': -1, 'I': -1, 'H': -1, 'K': -1, 'M': -1, 'L': -1, 'N': -1, 'Q': -1, 'P': -2, 'S': 0, 'R': -1, 'T': 0, 'W': -2, 'V': -1, 'Y': -1, 'X': -1, 'Z': -1}, 'Z': {'A': -1, 'C': -3, 'B': 1, 'E': 4, 'D': 1, 'G': -2, 'F': -3, 'I': -3, 'H': 0, 'K': 1, 'M': -1, 'L': -3, 'N': 0, 'Q': 3, 'P': -1, 'S': 0, 'R': 0, 'T': -1, 'W': -3, 'V': -2, 'Y': -2, 'X': -1, 'Z': 4}}
+
+Rows: 806     Columns: 806
+
+SCORING MATRIX 
+
+      0     1     2     3     4     5     6     7     8     9     10    11    12    13    14    15   ...   790   791   792   793   794   795   796   797   798   799   800   801   802   803   804   805
+0       0   -10   -20   -30   -40   -50   -60   -70   -80   -90  -100  -110  -120  -130  -140  -150  ... -7900 -7910 -7920 -7930 -7940 -7950 -7960 -7970 -7980 -7990 -8000 -8010 -8020 -8030 -8040 -8050
+1     -10     5    -5   -15   -25   -35   -45   -55   -65   -75   -85   -95  -105  -115  -125  -135  ... -7885 -7895 -7905 -7915 -7925 -7935 -7945 -7955 -7965 -7975 -7985 -7995 -8005 -8015 -8025 -8035
+2     -20    -5     9    -1   -11   -21   -31   -41   -51   -61   -71   -81   -91  -101  -111  -121  ... -7871 -7881 -7891 -7901 -7911 -7921 -7931 -7941 -7951 -7961 -7971 -7981 -7991 -8001 -8011 -8021
+3     -30   -15    -1    13     3    -7   -17   -27   -37   -47   -57   -67   -77   -87   -97  -107  ... -7857 -7867 -7877 -7887 -7897 -7907 -7917 -7927 -7937 -7947 -7957 -7967 -7977 -7987 -7997 -8007
+4     -40   -25   -11     3    17     7    -3   -13   -23   -33   -43   -53   -63   -73   -83   -93  ... -7843 -7853 -7863 -7873 -7883 -7893 -7903 -7913 -7923 -7933 -7943 -7953 -7963 -7973 -7983 -7993
+..    ...   ...   ...   ...   ...   ...   ...   ...   ...   ...   ...   ...   ...   ...   ...   ...  ...   ...   ...   ...   ...   ...   ...   ...   ...   ...   ...   ...   ...   ...   ...   ...   ...
+801 -8010 -7995 -7981 -7967 -7953 -7934 -7913 -7899 -7885 -7871 -7857 -7843 -7829 -7815 -7801 -7787  ...  3422  3433  3449  3459  3474  3490  3505  3521  3532  3548  3564  3574  3564  3554  3544  3534
+802 -8020 -8005 -7991 -7977 -7963 -7944 -7923 -7909 -7895 -7881 -7867 -7853 -7839 -7825 -7811 -7797  ...  3412  3423  3439  3449  3464  3480  3495  3511  3522  3538  3554  3564  3579  3569  3559  3549
+803 -8030 -8015 -8001 -7987 -7973 -7954 -7933 -7919 -7905 -7891 -7877 -7863 -7849 -7835 -7821 -7807  ...  3402  3413  3429  3439  3454  3470  3485  3501  3512  3528  3544  3554  3569  3584  3574  3564
+804 -8040 -8025 -8011 -7997 -7983 -7964 -7943 -7929 -7915 -7901 -7887 -7873 -7859 -7845 -7831 -7817  ...  3392  3406  3419  3430  3444  3460  3475  3491  3505  3518  3534  3545  3559  3574  3588  3578
+805 -8050 -8035 -8021 -8007 -7993 -7974 -7953 -7939 -7925 -7911 -7897 -7883 -7869 -7855 -7841 -7827  ...  3382  3396  3409  3420  3434  3450  3465  3481  3495  3508  3524  3535  3549  3564  3578  3594
+
+[806 rows x 806 columns]
+
+DIRECTION MATRIX 
+
+     0    1    2    3    4    5    6    7    8    9    10   11   12   13   14   15   16   17   18   ...  787  788  789  790  791  792  793  794  795  796  797  798  799  800  801  802  803  804  805
+0      0    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1  ...    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+1      2    0    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1  ...    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+2      2    2    0    0    0    1    1    1    1    1    0    1    1    1    1    1    1    1    1  ...    1    1    1    1    0    1    1    1    1    1    1    0    1    1    1    1    1    0    1
+3      2    2    0    0    0    1    1    1    1    1    0    1    1    1    1    1    1    1    1  ...    1    1    1    1    0    1    1    1    1    1    1    0    1    1    1    1    1    0    1
+4      2    2    0    0    0    1    1    1    1    1    0    1    1    1    1    1    1    1    1  ...    1    1    1    1    0    1    1    1    1    1    1    0    1    1    1    1    1    0    1
+..   ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...
+801    2    2    2    2    2    2    2    2    2    2    2    2    0    2    0    2    2    2    2  ...    2    2    2    2    2    2    0    2    2    2    2    2    2    2    0    1    0    1    1
+802    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    0  ...    2    0    2    2    2    2    2    2    2    0    2    2    2    2    2    0    1    1    1
+803    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    0    2    2  ...    2    2    2    2    0    2    0    2    2    2    2    0    2    2    0    2    0    1    1
+804    2    2    0    0    0    2    2    2    2    2    0    2    2    2    2    2    2    2    2  ...    0    2    2    2    0    2    0    2    2    2    2    0    2    2    0    2    2    0    1
+805    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2  ...    2    2    2    2    2    2    2    2    0    2    2    2    2    2    2    2    2    2    0
+
+[806 rows x 806 columns]
+
+Key ::   0: From top-left, 1: From left, 2: From top
+
+ALIGNED SEQUENCES:
+
+MSSSSWLLLSLVAVTAAQSTIEEQAKTFLDKFNHEAEDLFYQSSLASWNYNTNITEENVQNMNNAGDKWSAFLKEQSTLAQMYPLQEIQNLTVKLQLQALQQNGSSVLSEDKSKRLNTILNTMSTIYSTGKVCNPDNPQECLLLEPGLNEIMANSLDYNERLWAWESWRSEVGKQLRPLYEEYVVLKNEMARANHYEDYGDYWRGDYEVNGVDGYDYSRGQLIEDVEHTFEEIKPLYEHLHAYVRAKLMNAYPSYISPIGCLPAHLLGDMWGRFWTNLYSLTVPFGQKPNIDVTDAMVDQAWDAQRIFKEAEKFFVSVGLPNMTQGFWENSMLTDPGNVQKAVCHPTAWDLGKGDFRILMCTKVTMDDFLTAHHEMGHIQYDMAYAAQPFLLRNGANEGFHEAVGEIMSLSAATPKHLKSIGLLSPDFQEDNETEINFLLKQALTIVGTLPFTYMLEKWRWMVFKGEIPKDQWMKKWWEMKREIVGVVEPVPHDETYCDPASLFHVSNDYSFIRYYTRTLYQFQFQEALCQAAKHEGPLHKCDISNSTEAGQKLFNMLRLGKSEPWTLALENVVGAKNMNVRPLLNYFEPLFTWLKDQNKNSFVGWSTDWSPYADQSIKVRISLKSALGDKAYEWNDNEMYLFRSSVAYAMRQYFLKVKNQMILFGEEDVRVANLKPRISFNFFVTAPKNVSDIIPRTEVEKAIRMSRSRINDAFRLNDNSLEFLGIQPTLGPPNQPPVSIWLIVFGVVMGVIVVGIVILIFTGIRDRKKKNKARSGENPYASIDISKGENNPGFQNTDDVQTSF
+MSSSCWLLLSLVAVATAQSLIEEKAESFLNKFNQEAEDLSYQSSLASWNYNTNITEENAQKMNEAAAKWSAFYEEQSKIAQNFSLQEIQNATIKRQLKALQQSGSSALSPDKNKQLNTILNTMSTIYSTGKVCNSMNPQECFLLEPGLDEIMATSTDYNRRLWAWEGWRAEVGKQLRPLYEEYVVLKNEMARANNYEDYGDYWRGDYEAEGVEGYNYNRNQLIEDVENTFKEIKPLYEQLHAYVRTKLMEVYPSYISPTGCLPAHLLGDMWGRFWTNLYPLTTPFLQKPNIDVTDAMVNQSWDAERIFKEAEKFFVSVGLPQMTPGFWTNSMLTEPGDDRKVVCHPTAWDLGHGDFRIKMCTKVTMDNFLTAHHEMGHIQYDMAYAKQPFLLRNGANEGFHEAVGEIMSLSAATPKHLKSIGLLPSNFQEDNETEINFLLKQALTIVGTLPFTYMLEKWRWMVFQDKIPREQWTKKWWEMKREIVGVVEPLPHDETYCDPASLFHVSNDYSFIRYYTRTIYQFQFQEALCQAAKHDGPLHKCDISNSTEAGQKLLNMLSLGNSGPWTLALENVVGSRNMDVKPLLNYFQPLFVWLKEQNRNSTVGWSTDWSPYADQSIKVRISLKSALGKNAYEWTDNEMYLFRSSVAYAMREYFSREKNQTVPFGEADVWVSDLKPRVSFNFFVTSPKNVSDIIPRSEVEEAIRMSRGRINDIFGLNDNSLEFLGIYPTLKPPYEPPVTIWLIIFGVVMGTVVVGIVILIVTGIKGRKKKNETKREENPYDSMDIGKGESNAGFQNSDDAQTSF
+
+Number of Matches: 664
+Number of Mismatches: 141
+Number of Gaps: 0
+
+FINAL SCORE: 3594
+
+MISMATCH LIST:
+
+Position: 5; Sequence1: S; Sequence2: C
+Position: 15; Sequence1: T; Sequence2: A
+Position: 16; Sequence1: A; Sequence2: T
+Position: 20; Sequence1: T; Sequence2: L
+Position: 24; Sequence1: Q; Sequence2: K
+Position: 26; Sequence1: K; Sequence2: E
+Position: 27; Sequence1: T; Sequence2: S
+Position: 30; Sequence1: D; Sequence2: N
+Position: 34; Sequence1: H; Sequence2: Q
+Position: 40; Sequence1: F; Sequence2: S
+Position: 59; Sequence1: V; Sequence2: A
+Position: 61; Sequence1: N; Sequence2: K
+Position: 64; Sequence1: N; Sequence2: E
+Position: 66; Sequence1: G; Sequence2: A
+Position: 67; Sequence1: D; Sequence2: A
+Position: 73; Sequence1: L; Sequence2: Y
+Position: 74; Sequence1: K; Sequence2: E
+Position: 78; Sequence1: T; Sequence2: K
+Position: 79; Sequence1: L; Sequence2: I
+Position: 82; Sequence1: M; Sequence2: N
+Position: 83; Sequence1: Y; Sequence2: F
+Position: 84; Sequence1: P; Sequence2: S
+Position: 91; Sequence1: L; Sequence2: A
+Position: 93; Sequence1: V; Sequence2: I
+Position: 95; Sequence1: L; Sequence2: R
+Position: 98; Sequence1: Q; Sequence2: K
+Position: 103; Sequence1: N; Sequence2: S
+Position: 107; Sequence1: V; Sequence2: A
+Position: 110; Sequence1: E; Sequence2: P
+Position: 113; Sequence1: S; Sequence2: N
+Position: 115; Sequence1: R; Sequence2: Q
+Position: 135; Sequence1: P; Sequence2: S
+Position: 136; Sequence1: D; Sequence2: M
+Position: 142; Sequence1: L; Sequence2: F
+Position: 149; Sequence1: N; Sequence2: D
+Position: 154; Sequence1: N; Sequence2: T
+Position: 156; Sequence1: L; Sequence2: T
+Position: 160; Sequence1: E; Sequence2: R
+Position: 167; Sequence1: S; Sequence2: G
+Position: 170; Sequence1: S; Sequence2: A
+Position: 195; Sequence1: H; Sequence2: N
+Position: 209; Sequence1: V; Sequence2: A
+Position: 210; Sequence1: N; Sequence2: E
+Position: 213; Sequence1: D; Sequence2: E
+Position: 216; Sequence1: D; Sequence2: N
+Position: 218; Sequence1: S; Sequence2: N
+Position: 220; Sequence1: G; Sequence2: N
+Position: 228; Sequence1: H; Sequence2: N
+Position: 231; Sequence1: E; Sequence2: K
+Position: 239; Sequence1: H; Sequence2: Q
+Position: 246; Sequence1: A; Sequence2: T
+Position: 250; Sequence1: N; Sequence2: E
+Position: 251; Sequence1: A; Sequence2: V
+Position: 259; Sequence1: I; Sequence2: T
+Position: 280; Sequence1: S; Sequence2: P
+Position: 283; Sequence1: V; Sequence2: T
+Position: 286; Sequence1: G; Sequence2: L
+Position: 299; Sequence1: D; Sequence2: N
+Position: 301; Sequence1: A; Sequence2: S
+Position: 305; Sequence1: Q; Sequence2: E
+Position: 322; Sequence1: N; Sequence2: Q
+Position: 325; Sequence1: Q; Sequence2: P
+Position: 329; Sequence1: E; Sequence2: T
+Position: 335; Sequence1: D; Sequence2: E
+Position: 338; Sequence1: N; Sequence2: D
+Position: 339; Sequence1: V; Sequence2: D
+Position: 340; Sequence1: Q; Sequence2: R
+Position: 342; Sequence1: A; Sequence2: V
+Position: 353; Sequence1: K; Sequence2: H
+Position: 359; Sequence1: L; Sequence2: K
+Position: 368; Sequence1: D; Sequence2: N
+Position: 387; Sequence1: A; Sequence2: K
+Position: 425; Sequence1: S; Sequence2: P
+Position: 426; Sequence1: P; Sequence2: S
+Position: 427; Sequence1: D; Sequence2: N
+Position: 465; Sequence1: K; Sequence2: Q
+Position: 466; Sequence1: G; Sequence2: D
+Position: 467; Sequence1: E; Sequence2: K
+Position: 470; Sequence1: K; Sequence2: R
+Position: 471; Sequence1: D; Sequence2: E
+Position: 474; Sequence1: M; Sequence2: T
+Position: 491; Sequence1: V; Sequence2: L
+Position: 520; Sequence1: L; Sequence2: I
+Position: 536; Sequence1: E; Sequence2: D
+Position: 555; Sequence1: F; Sequence2: L
+Position: 559; Sequence1: R; Sequence2: S
+Position: 562; Sequence1: K; Sequence2: N
+Position: 564; Sequence1: E; Sequence2: G
+Position: 576; Sequence1: A; Sequence2: S
+Position: 577; Sequence1: K; Sequence2: R
+Position: 580; Sequence1: N; Sequence2: D
+Position: 582; Sequence1: R; Sequence2: K
+Position: 589; Sequence1: E; Sequence2: Q
+Position: 593; Sequence1: T; Sequence2: V
+Position: 597; Sequence1: D; Sequence2: E
+Position: 600; Sequence1: K; Sequence2: R
+Position: 603; Sequence1: F; Sequence2: T
+Position: 630; Sequence1: D; Sequence2: K
+Position: 631; Sequence1: K; Sequence2: N
+Position: 636; Sequence1: N; Sequence2: T
+Position: 653; Sequence1: Q; Sequence2: E
+Position: 656; Sequence1: L; Sequence2: S
+Position: 657; Sequence1: K; Sequence2: R
+Position: 658; Sequence1: V; Sequence2: E
+Position: 662; Sequence1: M; Sequence2: T
+Position: 663; Sequence1: I; Sequence2: V
+Position: 664; Sequence1: L; Sequence2: P
+Position: 668; Sequence1: E; Sequence2: A
+Position: 671; Sequence1: R; Sequence2: W
+Position: 673; Sequence1: A; Sequence2: S
+Position: 674; Sequence1: N; Sequence2: D
+Position: 679; Sequence1: I; Sequence2: V
+Position: 687; Sequence1: A; Sequence2: S
+Position: 698; Sequence1: T; Sequence2: S
+Position: 702; Sequence1: K; Sequence2: E
+Position: 709; Sequence1: S; Sequence2: G
+Position: 714; Sequence1: A; Sequence2: I
+Position: 716; Sequence1: R; Sequence2: G
+Position: 728; Sequence1: Q; Sequence2: Y
+Position: 732; Sequence1: G; Sequence2: K
+Position: 735; Sequence1: N; Sequence2: Y
+Position: 736; Sequence1: Q; Sequence2: E
+Position: 740; Sequence1: S; Sequence2: T
+Position: 745; Sequence1: V; Sequence2: I
+Position: 752; Sequence1: V; Sequence2: T
+Position: 753; Sequence1: I; Sequence2: V
+Position: 762; Sequence1: F; Sequence2: V
+Position: 766; Sequence1: R; Sequence2: K
+Position: 767; Sequence1: D; Sequence2: G
+Position: 773; Sequence1: K; Sequence2: E
+Position: 774; Sequence1: A; Sequence2: T
+Position: 775; Sequence1: R; Sequence2: K
+Position: 776; Sequence1: S; Sequence2: R
+Position: 777; Sequence1: G; Sequence2: E
+Position: 782; Sequence1: A; Sequence2: D
+Position: 784; Sequence1: I; Sequence2: M
+Position: 787; Sequence1: S; Sequence2: G
+Position: 791; Sequence1: N; Sequence2: S
+Position: 793; Sequence1: P; Sequence2: A
+Position: 798; Sequence1: T; Sequence2: S
+Position: 801; Sequence1: V; Sequence2: A

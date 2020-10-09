@@ -1,0 +1,225 @@
+FEATURES             Location/Qualifiers
+     source          1..3037
+                     /organism="Rattus norvegicus"
+                     /mol_type="mRNA"
+                     /strain="Sprague-Dawley"
+                     /db_xref="taxon:10116"
+                     /chromosome="8"
+                     /map="8q13"
+     gene            1..3037
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="low density lipoprotein receptor"
+                     /db_xref="GeneID:300438"
+                     /db_xref="RGD:2998"
+     exon            1..220
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /inference="alignment:Splign:2.0.8"
+     CDS             154..2793
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="LDL receptor"
+                     /codon_start=1
+                     /product="low-density lipoprotein receptor precursor"
+                     /protein_id="NP_786938.1"
+                     /db_xref="GeneID:300438"
+                     /db_xref="RGD:2998"
+                     /translation="MSTADLMLRWAIALLLAAAGVAAEDSCGKNEFQCRDGKCIVSKW
+                     VCDGSRECPDGSDESPETCMSVTCRSGEFSCGGRVSRCIPDSWRCDGRTDCENGSDEL
+                     DCSPKTCSLDEFRCQDGKCISRQFVCDQDWDCLDGSDEAHCAATTCGPAHFRCNSSSC
+                     IPSLWACDGDRDCDDGSDEWPQNCGAEDTAAEVVSSPCSSLEFHCGSSECIHRSWVCD
+                     GAADCKDKSDEENCAVTTCRPDEFQCADGSCIHGSRQCDREHDCKDMSDELGCINVTQ
+                     CDGPNKFKCHSGECISLDKVCNSARDCRDWSDEPIKECKTNECLDNNGGCSHICKDLK
+                     IGYECLCPSGFRLVDGHQCEDIDECQEPDTCSQLCVNLEGSFKCECRAGFHMDPHTRV
+                     CKAVGSIGFLLFTNRHEVRKMTLDRSEYTSLIPNLKNVVALDTEVANNRIYWSDLSQR
+                     KIYSAVMDQGTSLSYDAIISGDLHAPDGLAVDWIHGNIYWTDSVPGTVSVADTKGVRR
+                     RTLFREKGSRPRAIVVDPVHGFMYWTDWGTPAKIKKGGLNGVDIYSLVTEDIQWPNGI
+                     TLDLPSGRLYWVDSKLHSISSIDVNGGGRKTILEDEKQLAHPFSLAIYEDKVYWTDVL
+                     NEAIFSANRLTGSDVNLVAKNLMSPEDIVLFHNVTQPRGVNWCEATVLPNGGCQYMCL
+                     PAPQISAHSPKFTCACPDGMLLAKDMRSCLPEVDTVPTTQGTSTIGPVVTTSAAVSLK
+                     RKEDPSATRHKEDPSATRHNEDPSATSTSRQPGDTPELSTVESVTVSSQVQGDMAGRG
+                     DEVQRHGVGFLSIFLPIALVALLVFGAILLWRNWRLRNINSINFDNPVYQKTTEDEIH
+                     ICRSQDGYTYPSRQMVSLEDDVA"
+     sig_peptide     154..216
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="signal peptide (-21 to -1)"
+     mat_peptide     217..2790
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /product="low-density lipoprotein receptor"
+     misc_feature    442..444
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="N-linked (GlcNAc...) asparagine.
+                     /evidence=ECO:0000255; propagated from
+                     UniProtKB/Swiss-Prot (P35952.1); glycosylation site"
+     misc_feature    619..621
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="N-linked (GlcNAc...) asparagine.
+                     /evidence=ECO:0000255; propagated from
+                     UniProtKB/Swiss-Prot (P35952.1); glycosylation site"
+     misc_feature    970..972
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="N-linked (GlcNAc...) asparagine.
+                     /evidence=ECO:0000255; propagated from
+                     UniProtKB/Swiss-Prot (P35952.1); glycosylation site"
+     misc_feature    1345..1470
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="propagated from UniProtKB/Swiss-Prot (P35952.1);
+                     Region: LDL-receptor class B 1"
+     misc_feature    1471..1608
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="propagated from UniProtKB/Swiss-Prot (P35952.1);
+                     Region: LDL-receptor class B 2"
+     misc_feature    1609..1737
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="propagated from UniProtKB/Swiss-Prot (P35952.1);
+                     Region: LDL-receptor class B 3"
+     misc_feature    1738..1869
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="propagated from UniProtKB/Swiss-Prot (P35952.1);
+                     Region: LDL-receptor class B 4"
+     misc_feature    1870..1998
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="propagated from UniProtKB/Swiss-Prot (P35952.1);
+                     Region: LDL-receptor class B 5"
+     misc_feature    1999..2127
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="propagated from UniProtKB/Swiss-Prot (P35952.1);
+                     Region: LDL-receptor class B 6"
+     misc_feature    2122..2124
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="N-linked (GlcNAc...) asparagine.
+                     /evidence=ECO:0000255; propagated from
+                     UniProtKB/Swiss-Prot (P35952.1); glycosylation site"
+     misc_feature    2302..2517
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="propagated from UniProtKB/Swiss-Prot (P35952.1);
+                     Region: Clustered O-linked oligosaccharides"
+     misc_feature    2302..2304
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="Phosphothreonine.
+                     /evidence=ECO:0000244|PubMed:16641100; propagated from
+                     UniProtKB/Swiss-Prot (P35952.1); phosphorylation site"
+     misc_feature    2323..2325
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="Phosphothreonine.
+                     /evidence=ECO:0000244|PubMed:16641100; propagated from
+                     UniProtKB/Swiss-Prot (P35952.1); phosphorylation site"
+     misc_feature    2347..2349
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="Phosphothreonine.
+                     /evidence=ECO:0000244|PubMed:16641100; propagated from
+                     UniProtKB/Swiss-Prot (P35952.1); phosphorylation site"
+     misc_feature    2350..2352
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="Phosphothreonine.
+                     /evidence=ECO:0000244|PubMed:16641100; propagated from
+                     UniProtKB/Swiss-Prot (P35952.1); phosphorylation site"
+     misc_feature    2353..2355
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0000244|PubMed:16641100; propagated from
+                     UniProtKB/Swiss-Prot (P35952.1); phosphorylation site"
+     misc_feature    2575..2640
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="propagated from UniProtKB/Swiss-Prot (P35952.1);
+                     transmembrane region"
+     misc_feature    2641..2790
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="propagated from UniProtKB/Swiss-Prot (P35952.1);
+                     Region: Required for MYLIP-triggered down-regulation of
+                     LDLR. /evidence=ECO:0000250|UniProtKB:P01130"
+     misc_feature    2677..2694
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /note="propagated from UniProtKB/Swiss-Prot (P35952.1);
+                     Region: NPXY motif.
+                     /evidence=ECO:0000250|UniProtKB:P01130"
+     exon            221..343
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /inference="alignment:Splign:2.0.8"
+     exon            344..466
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /inference="alignment:Splign:2.0.8"
+     exon            467..850
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /inference="alignment:Splign:2.0.8"
+     exon            851..973
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /inference="alignment:Splign:2.0.8"
+     exon            974..1096
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /inference="alignment:Splign:2.0.8"
+     exon            1097..1216
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /inference="alignment:Splign:2.0.8"
+     exon            1217..1342
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /inference="alignment:Splign:2.0.8"
+     exon            1343..1514
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /inference="alignment:Splign:2.0.8"
+     exon            1515..1739
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /inference="alignment:Splign:2.0.8"
+     exon            1740..1858
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /inference="alignment:Splign:2.0.8"
+     exon            1859..1998
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /inference="alignment:Splign:2.0.8"
+     exon            1999..2140
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /inference="alignment:Splign:2.0.8"
+     exon            2141..2293
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /inference="alignment:Splign:2.0.8"
+     exon            2294..2521
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /inference="alignment:Splign:2.0.8"
+     exon            2522..2599
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /inference="alignment:Splign:2.0.8"
+     exon            2600..2757
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /inference="alignment:Splign:2.0.8"
+     exon            2758..3037
+                     /gene="Ldlr"
+                     /gene_synonym="LDLRA"
+                     /inference="alignment:Splign:2.0.8"
