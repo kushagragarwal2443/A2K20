@@ -1,0 +1,21 @@
+init y=0, z=0
+# We start with no initial conc for y and z
+param k1=20, k2=5, alpha1=10, alpha2=10, b1=1, b2=1
+# I used k1 as 20 so that y is activated once x is >=20 which happens after 20 seconds
+# I used k2 = 5 as max for y was 10 (alpha1/b1). Therefore I kept t_start_repression as t_half for y
+
+y'=alpha1*heav(x-k1)-b1*y
+# dy/dt = alpha1 * theta(x>k1) - b1*y
+z'=alpha2*heav(x-k1)*heav(k2-y)-b2*z
+# dz/dt = alpha2 * theta(x>k1) * theta(y<k2) - b2*z
+
+x=10+40*heav(t-20)
+#signal remains 10 from time 0-20 and then becomes 50
+aux signal=x
+
+@ total=60, dt=0.1, method=stiff
+@ bounds=1000000
+@ NPLOT=3, yp1=y, yp2=z, yp3=signal
+@ total=60
+
+done
